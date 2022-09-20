@@ -63,6 +63,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
+            cd ./yamdb_final
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra_web
             sudo docker-compose stop
             sudo docker-compose rm web
