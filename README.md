@@ -1,8 +1,6 @@
-# Проект "YaMDb"
-Проект YaMDb собирает отзывы (Review) пользователей на произведения (Titles). Произведения делятся на категории (Category), список которых  может быть расширен администратором.
-Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
-В каждой категории есть произведения. Произведению может быть присвоен жанр (Genre) из списка предустановленных. Новые жанры может создавать только администратор.
-Благодарные или возмущённые пользователи оставляют к произведениям текстовые отзывы (Review) и ставят произведению оценку в диапазоне от одного до десяти (целое число); из пользовательских оценок формируется усреднённая оценка произведения — рейтинг (целое число). На одно произведение пользователь может оставить только один отзыв.
+# YaMDb
+
+Проект YaMDb собирает отзывы `(Review)` пользователей на произведения `(Title)`. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий `(Category)` может быть расширен администратором. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку. В каждой категории есть произведения: книги, фильмы или музыка. Например, в категории «Книги» могут быть произведения «Винни-Пух и все-все-все» и «Марсианские хроники», а в категории «Музыка» — песня «Давеча» группы «Насекомые» и вторая сюита Баха. Произведению может быть присвоен жанр `(Genre)` из списка предустановленных (например, «Сказка», «Рок» или «Артхаус»). Новые жанры может создавать только администратор.
 
 ![](https://github.com/Alweee/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
@@ -17,6 +15,7 @@
 [![Docker](https://img.shields.io/badge/-Docker-464646?style=flat&logo=Docker&logoColor=56C0C0&color=008080)](https://www.docker.com/)
 [![Docker-compose](https://img.shields.io/badge/-Docker%20compose-464646?style=flat&logo=Docker&logoColor=56C0C0&color=008080)](https://www.docker.com/)
 [![Docker Hub](https://img.shields.io/badge/-Docker%20Hub-464646?style=flat&logo=Docker&logoColor=56C0C0&color=008080)](https://www.docker.com/products/docker-hub)
+[![Yandex.Cloud](https://img.shields.io/badge/-Yandex.Cloud-464646?style=flat&logo=Yandex.Cloud&logoColor=56C0C0&color=008080)](https://cloud.yandex.ru/)
 [![Yandex.Cloud](https://img.shields.io/badge/-Yandex.Cloud-464646?style=flat&logo=Yandex.Cloud&logoColor=56C0C0&color=008080)](https://cloud.yandex.ru/)
 
 ### Шаблон наполнения env-файла:
@@ -38,33 +37,25 @@
 
 **Выполнить миграции:**
 
-из директории infra/
-
 `docker-compose exec web python manage.py migrate`
 
 **Заполнить базу данными:**
 
-из директории infra/
-
-`python manage.py loaddata fixtures.json`
+`docker-compose exec web python manage.py loaddata fixtures.json`
 
 **Создать суперпользователя:**
-
-из директории infra/
 
 `docker-compose exec web python manage.py createsuperuser`
 
 **Собрать статику:**
 
-из директории infra/
-
 `docker-compose exec web python manage.py collectstatic --no-input`
 
 ### Примеры запросов:
 
-**`GET` | Получение списка всех жанров: `api/v1/genres/`**
+**`GET` | Получение списка всех жанров: `/api/v1/genres/`**
 
-Response samples:
+Response:
 ```
 [
     {
@@ -77,13 +68,13 @@ Response samples:
                 "slug": "string"
             }, ...
         ]
-}
+    }
 ]
 ```
 
-**`POST` | Добавление произведения: `api/v1/titles/`**
+**`POST` | Добавление произведения: `/api/v1/titles/`**
 
-Request samples:
+Request:
 ```
 {
     "name": "string",
@@ -95,7 +86,7 @@ Request samples:
     "category": "string"
 }
 ```
-Response samples:
+Response:
 ```
 {
     "id": 0,
