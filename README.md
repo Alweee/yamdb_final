@@ -27,7 +27,7 @@
 
 ![](https://github.com/Alweee/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-### Шаблон наполнения env-файла:
+### Шаблон наполнения `.env` файла:
 - DB_ENGINE=db_engine
 - DB_NAME=db_name
 - POSTGRES_USER=postgres_user
