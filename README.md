@@ -4,6 +4,8 @@
 
 ### Адрес сервера с приложением: `158.160.9.63`
 
+### Документация API: 
+
 ![](https://github.com/Alweee/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Cтек технологий:
