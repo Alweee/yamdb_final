@@ -4,21 +4,13 @@
 
 ### Адрес сервера с приложением:
 
-<<<<<<< HEAD
-`158.160.9.63`
-
-### Документация API:
-[**redoc**](http://158.160.9.63/redoc/)
-
-[**swagger**](http://158.160.9.63/swagger/)
-=======
 [**http://158.160.9.63/**](http://158.160.9.63/)
 
 ### Документация API:
+
 [**http://158.160.9.63/redoc/**](http://158.160.9.63/redoc/)
 
 [**http://158.160.9.63/swagger/**](http://158.160.9.63/swagger/)
->>>>>>> cabbad8903112f21f88a794a328038f827288dea
 
 ### Cтек технологий:
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat&logo=Python&logoColor=56C0C0&color=008080)](https://www.python.org/)
@@ -36,11 +28,7 @@
 
 ![](https://github.com/Alweee/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-<<<<<<< HEAD
-### Шаблон наполнения env-файла:
-=======
 ### Шаблон наполнения `.env` файла:
->>>>>>> cabbad8903112f21f88a794a328038f827288dea
 - DB_ENGINE=db_engine
 - DB_NAME=db_name
 - POSTGRES_USER=postgres_user
