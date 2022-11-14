@@ -4,13 +4,13 @@
 
 ### Адрес сервера с приложением:
 
-[**http://158.160.9.63/**](http://158.160.9.63/)
+[**http://158.160.9.63:81/**](http://158.160.9.63:81/)
 
 ### Документация API:
 
-[**http://158.160.9.63/redoc/**](http://158.160.9.63/redoc/)
+[**http://158.160.9.63:81/redoc/**](http://158.160.9.63:81/redoc/)
 
-[**http://158.160.9.63/swagger/**](http://158.160.9.63/swagger/)
+[**http://158.160.9.63:81/swagger/**](http://158.160.9.63:81/swagger/)
 
 ### Cтек технологий:
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat&logo=Python&logoColor=56C0C0&color=008080)](https://www.python.org/)
