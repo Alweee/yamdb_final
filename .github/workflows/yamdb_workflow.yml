@@ -64,7 +64,7 @@ jobs:
           script: |
             cd yamdb/
             sudo docker-compose stop
-            sudo docker-compose rm yamdb_web_1
+            sudo docker-compose rm web -y
             sudo docker image rm ${{ secrets.DOCKER_USERNAME }}/yamdb-backend:v1.2022
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb-backend:v1.2022
             touch .env
