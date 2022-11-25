@@ -105,7 +105,10 @@ Response:
     "rating": 0,
     "description": "string",
     "genre": [
-        {...}
+        {
+            "name": "string",
+            "slug": "string"
+        }
     ],
     "category": {
         "name": "string",
