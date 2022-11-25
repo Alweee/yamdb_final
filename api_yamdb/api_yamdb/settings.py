@@ -10,7 +10,7 @@ temp_path = Path(BASE_DIR).resolve().parent
 dotenv_path = Path(temp_path, 'infra', '.env').resolve()
 load_dotenv(dotenv_path)
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY', default='p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs')
 
 DEBUG = False
 

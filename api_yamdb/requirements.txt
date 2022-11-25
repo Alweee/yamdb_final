@@ -13,3 +13,4 @@ drf-yasg==1.21.3
 pytest-pythonpath==0.7.3
 pytest-django==4.4.0
 pytest==6.2.4
+flake8
